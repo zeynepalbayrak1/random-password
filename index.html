@@ -8,15 +8,14 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
-     <div class="container">
-          <h1 class="fs-1 fw-bold">Generate <br> Random Passowrd</h1>
-          <div class="display bg-white border rounded py-3 px-2">
+     <div class="container mt-5">
+          <h1 class="fs-1 fw-bold py-4">Generate <br> <span>Random Password</span> </h1>
+          <div class="display bg-white py-3 px-3 rounded">
                <input type="text" id="password" placeholder="Password">
-               <img src="" alt="">
+               <img src="img/copy-icon.png"  onclick="copyPassword()" id="copyBtn">
           </div>
+          <button class="p-1 my-3 rounded" onclick="createPassword()"><img src="img/magic-wand.png"> Generate Password</button>
      </div>
-
-     
+     <script src="script.js"></script>
 </body>
 </html>
